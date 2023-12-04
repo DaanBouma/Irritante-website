@@ -1,0 +1,289 @@
+#right-section {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 50vw;
+    height: 100vh;
+
+}
+
+#background {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 50vw;
+    height: 100vh;
+    background-color: #3498db;
+    /* Startkleur */
+    transition: 1s ease;
+    /* Overgangseffect */
+    animation: BackgroundAnimation 0.1s infinite;
+}
+
+@keyframes BackgroundAnimation {
+    0% {
+        width: 50vw;
+        background-color: red;
+        color: red;
+    }
+
+    10% {
+        width: 50vw;
+        background-color: orange;
+        color: orange;
+    }
+
+    20% {
+        width: 50vw;
+        background-color: yellow;
+    }
+
+    30% {
+        width: 60vw;
+        background-color: lime;
+    }
+
+    40% {
+        width: 50vw;
+        background-color: blue;
+    }
+
+    50% {
+        width: 50vw;
+        background-color: purple;
+    }
+
+    60% {
+        width: 50vw;
+        background-color: pink
+    }
+}
+#Downloadbutton1, #Downloadbutton2 {
+    animation: Fade 0.05s infinite;
+}
+
+@keyframes ColorAnimation {
+    0% {
+        color: red;
+    }
+
+    10% {
+        color: orange;
+    }
+
+    20% {
+        color: yellow;
+    }
+
+    30% {
+        color: lime;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    40% {
+        color: blue;
+    }
+
+    50% {
+        color: purple;
+    }
+
+    60% {
+        color: pink;
+    }
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+p {
+    animation: ColorAnimation 0.1s infinite;
+}
+
+#section-image {
+    width: auto;
+    height: 40em;
+    animation: Phone 0.05s infinite;
+}
+
+#left-section {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#grid-icon {
+    width: 40px;
+}
+
+#Title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+        animation: ColorAnimation 0.1s infinite;
+}
+
+#Downloadbutton1,
+#Downloadbutton2 {
+    border: none;
+    background-color: transparent;
+}
+
+#grid-item-5 {
+    margin-top: 5em;
+}
+
+@media only screen and (max-width: 750px) {
+    #grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    #right-section {
+        width: 100vw;
+        height: auto;
+        margin: 0;
+    }
+
+    #ad {
+        height: 100vh;
+    }
+
+    #left-section {
+        width: 100%;
+        margin-top: 20%;
+
+    }
+
+    #smaller-container {
+        width: 100%;
+    }
+
+    #left-section {
+        transform: scale(0.8);
+        margin: 0;
+    }
+
+}
+
+
+#ad {
+    position: absolute;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+
+}
+
+#grid-container {
+    position: absolute;
+    z-index: 9;
+}
+
+#video {
+    height: 100vh;
+    pointer-events: none;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.news {
+    /* display: none; */
+    position: fixed;
+    bottom: 1px;
+    max-width: 345px;
+    width: 100%;
+    background-color: transparent;
+    animation: Border 0.1s infinite;
+    border: pink solid 5px;
+    border-radius: 8px;
+    padding: 15px 25px 22px;
+    transition: all 0.3s ease;
+    z-index: 800;
+}
+.news:hover {
+    animation: Phone 0.1s infinite;
+}
+
+#skip {
+    position: absolute;
+    z-index: 11;
+}
+
+@media only screen and (max-width: 1550px) {
+
+    #video {
+        height: 100vh;
+        width: 100vw;
+    }
+}
+
+@keyframes Phone {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+@keyframes Fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.1;
+    }
+}
+#ManImage {
+    z-index: 700;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    animation: Fade 2s infinite;
+}
+@keyframes Border {
+    0% {
+        border: 5px pink solid;
+    }
+
+    10% {
+        border: 5px rgb(192, 255, 233) solid;
+    }
+    20% {
+        border: 10px rgb(255, 243, 192) solid;
+    }
+    30% {
+        border: 5px rgb(192, 255, 233) solid;
+    }
+    40% {
+        border: 3px rgb(0, 255, 166) solid;
+    }
+    50% {
+        border: 5px rgb(250, 255, 192) solid;
+    }
+}
+body {
+    cursor: move ;
+}
+

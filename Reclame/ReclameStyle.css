@@ -1,0 +1,69 @@
+#reclame {
+    width: 100vw;
+    height: 100vh;
+}
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#BurgerKing {
+    width: 100vw;
+    display: none;
+    position: absolute;
+    z-index: 900;
+}
+#McDonalds {
+    width: 100vw;
+    display: none;
+    position: absolute;
+    z-index: 900;
+}
+#KFC {
+    width: 100vw;
+    display: none;
+    position: absolute;
+    z-index: 900;
+}
+#Jumbo {
+    width: 100vw;
+    display: none;
+    position: absolute;
+    z-index: 900;
+}
+#Albert {
+    width: 100vw;
+    display: none;
+    position: absolute;
+    z-index: 900;
+}
+#Kruidvat {
+    width: 100vw;
+    display: none;
+    position: absolute;
+    z-index: 900;
+}
+#button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+    
+}
+@media screen and (max-width: 1350px) {
+    #Kruidvat, #Albert, #Jumbo, #KFC, #McDonalds, #BurgerKing {
+        width: auto;
+        height: 100vh;
+    }
+}
